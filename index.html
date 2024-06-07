@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefat's portfolio</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; /* This will vertically align items in the center */
+        }
+        img {
+            width: 200px; /* You can set the width */
+            height: auto; /* This will keep the aspect ratio */
+            margin-right: 20px; /* Adds some space between the image and the text */
+            animation: talk 1s infinite alternate;
+        }
+        h1 {
+            color: green;
+            animation: dance 1s infinite alternate;
+        }
+        @keyframes dance {
+            0% { transform: translateX(0px); }
+            25% { transform: translateX(10px) rotate(10deg); }
+            50% { transform: translateX(-10px) rotate(-10deg); }
+            75% { transform: translateX(10px) rotate(10deg); }
+            100% { transform: translateX(-10px) rotate(-10deg); }
+        }
+        @keyframes talk {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./10846492_959955557366316_7822126795487666704_n.jpeg" alt="Sefat"/>
+        <h1>Sefat is a top rated freelancer on Upwork,<br> and a professional web developer</h1>
+    </div>
+    <hr/>
+</body>
+</html>
